@@ -1,6 +1,8 @@
-maintainer       "YOUR_COMPANY_NAME"
-maintainer_email "YOUR_EMAIL"
+maintainer       "RightScale"
+maintainer_email "edwin@rightscale.com"
 license          "All rights reserved"
 description      "Installs/Configures lbwrapper"
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 version          "0.0.1"
+
+
