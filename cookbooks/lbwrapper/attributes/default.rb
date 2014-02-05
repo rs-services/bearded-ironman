@@ -1,6 +1,6 @@
 if node[:cloud][:provider] = "amazon"
   default[:lb][:provider]='lb_elb'
-  default[:lb][:service_name]="#{node[:lbwrapper][:amazon][:service_name]}"
+  default[:lb][:service_name]="Amazon ELB"
 end
 
 if node[:cloud][:provider] = "google"
