@@ -4,6 +4,6 @@ if node[:cloud][:provider] = "amazon"
 end
 
 if node[:cloud][:provider] = "google"
-  default[:lb][:provider]='gcelb_lb'
+  default[:lb][:provider]='lb'
   default[:lb][:service_name]="Google Load Balancer"
 end
