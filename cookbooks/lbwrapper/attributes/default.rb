@@ -5,5 +5,5 @@ end
 
 if node[:cloud][:provider] = "google"
   default[:lb][:provider]='gcelb_lb'
-  default[:lb][:service_name]="#{node[:lbwrapper][:gce][:service_name]}"
+  default[:lb][:service_name]="Google Load Balancer"
 end
