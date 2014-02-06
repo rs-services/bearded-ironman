@@ -1,4 +1,4 @@
 
-log "  Logging provider: #{default[:lb][:provider]}"
+log "  Logging provider: test"
 
 include_recipe "lb::do_attach_request"
