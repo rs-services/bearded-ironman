@@ -5,6 +5,6 @@ if node[:cloud][:provider] = "amazon"
 end
 
 if node[:cloud][:provider] = "google"
-  include_recipe "lb::default"
+  include_recipe "rsc_google_cloud::default"
   include_recipe "lb::lb_do_attach"
 end
