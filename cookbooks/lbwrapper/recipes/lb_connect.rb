@@ -1,5 +1,5 @@
 if node[:cloud][:provider] = "amazon"
-   include_recipe "lb::lb_do_attach"
+   include_recipe "lb::do_attach_request"
 end
 
 if node[:cloud][:provider] = "google"
