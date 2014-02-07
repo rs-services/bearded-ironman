@@ -1,7 +1,7 @@
 if node[:cloud][:provider] = "amazon"
-  Chef::Log('AMAZON')
+  Chef::Log.info('AMAZON')
 end
 
 if node[:cloud][:provider] = "google"
- Chef::Log('GCE')
+ Chef::Log.info('GCE')
 end
