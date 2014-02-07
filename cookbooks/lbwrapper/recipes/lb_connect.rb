@@ -3,6 +3,5 @@ if node[:cloud][:provider] = "amazon"
 end
 
 if node[:cloud][:provider] = "google"
- Chef::Log.info('GCE')
- Chef::Log.info("#{node[:cloud][:provider]}")
+  include_recipe "rsc_google_cloud::lb_do_attach"
 end
