@@ -1,2 +1,7 @@
-include_recipe "lb:default"
-include_recipe "lb::do_attach_request"
+if node[:cloud][:provider] = "amazon"
+  Chef::Log('AMAZON')
+end
+
+if node[:cloud][:provider] = "google"
+ Chef::Log('GCE')
+end
