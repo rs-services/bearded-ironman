@@ -2,7 +2,7 @@ require '/var/spool/cloud/meta-data.rb'
 
 if node[:cloud][:provider] = "amazon"
    #include_recipe "lb::do_attach_request"
-   Chef.Log.info('Amazon Cloud Detected')
+   Chef::Log.info('Amazon Cloud Detected')
    include_recipe "lb::default"
    include_recipe "lb::do_attach_request"
 end
