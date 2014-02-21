@@ -11,6 +11,6 @@ depends "lb_elb"
 depends "google_cloud"
 depends "rsc_google_cloud"
 
-recipe "lbwrapper::default"
+recipe "lbwrapper::default", "sets up node attributes"
 recipe "lbwrapper::lb_connect", "connect instance to the load balancer"
 recipe "lbwrapper::lb_disconnect", "disconnect instance from the load balancer"
