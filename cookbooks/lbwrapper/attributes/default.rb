@@ -1,4 +1,4 @@
-if node[:cloud][:provider] = "amazon"
+if node[:cloud][:provider] = "ec2"
   default[:lb][:provider]='lb_elb'
   default[:lb][:service][:provider]='lb_elb'
   default[:lb][:service_name]="Amazon ELB"
