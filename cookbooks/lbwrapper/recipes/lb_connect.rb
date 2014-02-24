@@ -16,9 +16,13 @@ pool_names(node[:lb][:pools]).each do |pool_name|
   lb_tag pool_name
   # See cookbooks/lb_<provider>/providers/default.rb for the "attach" action.
   lb pool_name do
-    backend_id node[:remote_recipe][:backend_id]
-    backend_ip node[:remote_recipe][:backend_ip]
-    backend_port node[:remote_recipe][:backend_port].to_i
+    backend_id node[:rightscale][:instance_uuid]
+    backend_ip node[:app][:ip]
+    backend_port node[:app][:port].to_i
+    service_region node[:lb][:service][:region]
+    service_lb_name node[:lb][:service][:lb_name]
+    service_account_id node[:lb][:service][:account_id]
+    service_account_secret node[:lb][:service][:account_secret]
     session_sticky node[:lb][:session_stickiness]
     action :attach
   end
