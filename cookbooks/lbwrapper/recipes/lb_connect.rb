@@ -1,4 +1,5 @@
-require '/var/spool/cloud/meta-data.rb'
+rightscale_marker :begin
+
 include_recipe "lbwrapper::default"
 log "Cloud Detected: #{node[:cloud][:provider]}"
 log "LB Provider: #{node[:lb][:provider]}"
@@ -28,3 +29,5 @@ pool_names(node[:lb][:pools]).each do |pool_name|
     action :attach
   end
 end
+
+rightscale_marker :end
