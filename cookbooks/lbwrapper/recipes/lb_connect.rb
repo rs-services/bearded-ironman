@@ -1,5 +1,5 @@
 require '/var/spool/cloud/meta-data.rb'
-
+include_recipe "lbwrapper::default"
 log "Cloud Detected: #{node[:cloud][:provider]}"
 log "LB Provider: #{node[:lb][:provider]}"
 
