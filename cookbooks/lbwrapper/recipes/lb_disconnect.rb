@@ -17,6 +17,7 @@ pool_names(node[:lb][:pools]).each do |pool_name|
   lb_tag pool_name
   # See cookbooks/lb_<provider>/providers/default.rb for the "attach" action.
   lb pool_name do
+    provider node[:lb][:provider]
     backend_id node[:rightscale][:instance_uuid]
     backend_ip node[:app][:ip]
     backend_port node[:app][:port].to_i
