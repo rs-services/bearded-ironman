@@ -8,13 +8,16 @@ class Chef::Recipe
   include RightScale::App::Helper
 end
 
-# Calls the "attach" action for all pools.
-log " Remote recipe executed by do_attach_request"
-# See cookbooks/app/libraries/helper.rb for the "pool_names" method.
-pool_names(node[:lb][:pools]).each do |pool_name|
+  # Calls the "attach" action for all pools.
+  log " Remote recipe executed by do_attach_request"
+
+  # See cookbooks/app/libraries/helper.rb for the "pool_names" method.
+  pool_names(node[:lb][:pools]).each do |pool_name|
   log " Adding tag to answer for vhost load balancing - #{pool_name}."
+  
   # See cookbooks/lb/definitions/lb_tag.rb for the "lb_tag" definition.
   lb_tag pool_name
+  
   # See cookbooks/lb_<provider>/providers/default.rb for the "attach" action.
   lb pool_name do
     provider node[:lb][:provider]

@@ -8,7 +8,7 @@ version          "0.0.1"
 depends "rightscale"
 depends "lb"
 depends "lb_elb"
-depends "google_cloud"
+#depends "google_cloud"
 depends "rsc_google_cloud"
 
 recipe "lbwrapper::default", "sets up node attributes"
