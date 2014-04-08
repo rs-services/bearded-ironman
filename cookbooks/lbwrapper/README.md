@@ -1,6 +1,6 @@
 Description
 ===========
-Provides Multi Cloud LB registrati functionality 
+Provides Multi Cloud LB attach/dettach functionality 
 
 Uses existing cloud specific cookbooks to connect to multi cloud lb services || servers.
 
@@ -12,9 +12,10 @@ Cookbooks
 Requirements
 ============
 Recipes:
+<pre><code>
 rsc_google_cloud::default
 google_cloud::default
-
+</code></pre>
 Attributes
 ==========
 
