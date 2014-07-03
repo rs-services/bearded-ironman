@@ -1,9 +1,8 @@
 #
-# Cookbook Name:: rs-kabana
+# Cookbook Name:: rs-logstash
 # Recipe:: default
 #
 # Copyright 2014, YOUR_COMPANY_NAME
 #
 # All rights reserved - Do Not Redistribute
 #
-depends 'chef-logstash'
