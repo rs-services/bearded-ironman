@@ -10,3 +10,8 @@ version          '0.1.0'
 depends 'logstash'
 
 recipe "rs-logstash::install_logstash", "Installs the logstash server"
+
+attribute "logstash/instance",
+	:name => "test"
+	:type => "hash"
+
