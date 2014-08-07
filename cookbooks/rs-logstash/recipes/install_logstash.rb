@@ -5,5 +5,5 @@
 # Copyright 2014, YOUR_COMPANY_NAME
 #
 #
-node.default['logstash']['instance']['name'] = 'testServer'
+
 include_recipe 'logstash::server'

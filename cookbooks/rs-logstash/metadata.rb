@@ -11,3 +11,9 @@ depends 'logstash'
 
 recipe "rs-logstash::install_logstash", "Installs the logstash server"
 
+#node.default['logstash']['instance']['name'] = 'testServer'
+attribute "logstash/instance/name",
+	:display_name => "LogStash Server Name"
+	:descripttion => "Name of your logstash server"
+	:default => "testServer"
+	:recipe => ["logstash::server"]
