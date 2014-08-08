@@ -1,2 +1,2 @@
-override['logstash']['instance']['name'] = 'server'
+override['logstash']['instance']['name'] = 'default'
 
