@@ -1,2 +1,1 @@
-default['logstash']['instance']['name'] = 'default'
-
+default['logstash']['instance']['server']=Hash.new
