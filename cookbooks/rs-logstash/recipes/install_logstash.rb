@@ -9,11 +9,11 @@
 
 
 bash "install_logstash_source" do 
-	cwd "/usr/local/src"
+	cwd "/opt"
 	code <<-EOH
 	curl -O https://download.elasticsearch.org/logstash/logstash/logstash-1.4.2.tar.gz
 	tar zxvf logstash-1.4.2.tar.gz
-	for i in `ls /usr/local/src/logstash-1.4.2/bin/`; do ln -s /usr/local/src/logstash-1.4.2/bin/$i /usr/local/bin/$i;done
+	for i in `ls /opt/logstash-1.4.2/bin/`; do ln -s /opt/logstash-1.4.2/bin/$i /usr/bin/$i;done
 	EOH
 end
 
