@@ -1,2 +1,2 @@
-node.default['logstash']['instance']['name'] = 'server'
+override['logstash']['instance']['name'] = 'server'
 
