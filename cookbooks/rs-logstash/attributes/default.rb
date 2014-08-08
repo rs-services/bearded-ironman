@@ -1,2 +1,2 @@
-node.default['logstash']['instance']['name'] = 'testServer'
+node.default['logstash']['instance']['name'] = 'server'
 
