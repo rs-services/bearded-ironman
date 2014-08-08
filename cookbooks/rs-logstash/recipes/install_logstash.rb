@@ -2,13 +2,13 @@
 # Cookbook Name:: rs-logstash
 # Recipe:: install_logstash
 #
-# Copyright 2014, YOUR_COMPANY_NAME
+# Copyright 2014, RightScale
 #
 #
 
 
 
-bash "install_logstash_source" do 
+bash "install_logstash" do 
 	cwd "/opt"
 	code <<-EOH
 	curl -O https://download.elasticsearch.org/logstash/logstash/logstash-1.4.2.tar.gz
