@@ -6,7 +6,7 @@
 
 
 bash "install_elasticsearch" do 
-	cwd "/opt/elasticsearch-1.1.1"
+	cwd "/opt/elasticsearch-1.1.1/bin"
 	code <<-EOH
 	./elasticsearch -d
 	EOH
