@@ -7,6 +7,6 @@
 # All rights reserved - Do Not Redistribute
 #
 
-package "openjdk" do
+package "openjdk-6-jre" do
  action :install
 end
