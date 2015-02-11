@@ -7,5 +7,5 @@
 # All rights reserved - Do Not Redistribute
 #
 
-
+depends 'mongodb'
 include_recipe "mongodb::default"
