@@ -8,3 +8,9 @@ version          '0.1.0'
 
 
 depends 'mongodb'
+
+recipe "rs-mongodb::default", "Installs elasticsearch dependencies."
+
+
+#standalone
+#replica set
