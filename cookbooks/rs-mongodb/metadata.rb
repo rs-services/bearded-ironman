@@ -9,7 +9,7 @@ version          '0.1.0'
 
 depends 'mongodb'
 
-recipe "rs-mongodb::default", "Installs elasticsearch dependencies."
+recipe "mongodb::default", "Installs MongoDB standalone."
 
 
 #standalone
