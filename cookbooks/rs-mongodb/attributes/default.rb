@@ -1,1 +1,2 @@
-node['application']['port'] = '1111'
+default['mongodb']['config']['port'] = '8080'
+default['mongodb']['config']['dbpath'] = '/mnt/ephemeral/dbpath'
